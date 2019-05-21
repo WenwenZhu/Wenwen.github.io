@@ -1,7 +1,0 @@
-
-  <view class="Popup-root _a315c7c" bindtap="hide"  wx:if="{{isShow}}">
-    <view class="mask _a315c7c" catchtouchmove="catchForNotHide"/>
-    <view class="Popup-pop _a315c7c" id="pop" style="height: {{height}}rpx; width: {{width}}rpx; top: calc(50% - {{height}}rpx/2); left: calc(50% - {{width}}rpx/2)" catchtap="catchForNotHide" bindtouchmove="catchForNotHide">
-      
-    </view>
-  </view>
