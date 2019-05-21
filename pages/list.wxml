@@ -1,0 +1,34 @@
+
+  <view class="container">
+    <image class="bg" src="../assets/images/img3.jpg" background-size="cover"/>
+    <view class="c-box">
+      <div class="search"><i class="icon iconfont icon-18 icon-sousuo" bindtap="showMovie"/></div>
+      <input placeholder="输入查询城市名称" focus="{{focus}}" class="c-input" placeholder-class="phcolor"/>
+    </view>
+    <view class="time-box"><text class="up_time">{{datas.update_time}}</text></view>
+    <view class="userinfo">
+      <text class="info font-36 margin-bottom-200">{{datas.city}} </text>
+      <text class="info font-108 margin-bottom-50">{{onlydata.hours[0].tem}}</text>
+      <!--class="{{onlydata.hours[0].wea == '小雨'?'icon-shouye':'icon-shouye'}}"-->
+      <div><p><i class="icon iconfont icon-18 icon-shouye font-68"/></p></div>
+      <text class="info font-42">{{onlydata.hours[0].wea}}</text>
+    </view>
+
+    <view class="section width-100">
+      <view class="flex-wrp" style="flex-direction:row;">
+
+          <view class="flex-item">
+            <text class="font-28">{{item.day}}\n</text>
+            <text class="font-28">{{item.tem2}}~{{i.tem1}}\n</text>
+            <text class="font-28">{{item.wea}}\n</text>
+            <text class="font-28">风 {{item.win_speed}}\n</text>
+          </view>
+
+      </view>
+    </view>
+    <!--<view class="movie" >-->
+      <!--<repeat for="{{datasArr}}" key="index" index="index" item="item">-->
+        <!--<!&ndash;<movie v-bind:movie.sync="item"></movie>&ndash;&gt;-->
+      <!--</repeat>-->
+    <!--</view>-->
+  </view>
